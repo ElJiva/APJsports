@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="@Ivan/Cesar">
+    <meta name="date" content="2024-10-20">
+    <meta name="keywords" content="APJ, shop, tienda">
+    <title>APJ - Inicio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../prueba/style/styles.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">APJ</a>
+        <nav>
+            <a href="home.html">Inicio</a>
+            <a href="products.html">Productos</a>
+            <a href="aboutUs.html">Quienes Somos</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+            </a>
+            <a href="cart.html" class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
+            </a>
+        </div>
+    </header>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/MiDeporteMiEstilo.jpg" alt="Producto 1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/carouselimg1.png" alt="Producto 2">
+                <div class="carousel-caption d-none d-md-block">    
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/W16_Carousel_2_Desktop_adidasGazelle.jpeg" alt="Producto 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Producto 3</h5>
+                    <p>Descripción del Producto 3.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <section class="best-sellers">
+        <h2>Más Vendidos</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/NikeAirForce.jpg" alt="Nike Air Force 1'07">
+                </div>
+                <h3 class="product-title">Nike Air Force 1'07</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/NikeClub.jpg" alt="Nike Club">
+                </div>
+                <h3 class="product-title">Nike Club</h3>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/NikeEpicFast.jpg" alt="Nike Epic Fast">
+                </div>
+                <h3 class="product-title">Nike Epic Fast</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/JordanBrooklynFleece.png" alt="BrooklynFleece">
+                </div>
+                <h3 class="product-title">Jordan Brooklyn Fleece</h3>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="../img/GazelleIndoor.avif" alt="Nike Epic Fast">
+                </div>
+                <h3 class="product-title">Tenis Gazelle Indoor</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rights"></footer>
+    
+    <script type="module">
+        import MyComponent from '../footer.js';
+
+        const app = document.getElementById('rights');
+
+        const component = MyComponent();
+        app.appendChild(component);
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
